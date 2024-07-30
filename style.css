@@ -1,0 +1,106 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #87CEFA, #FFFFFF);
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #333;
+    text-align: center;
+  }
+  
+  #weather-search {
+    display: flex;
+    margin-bottom: 1em;
+  }
+  
+  #search {
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    height: 42px;
+    transition: border-color 0.3s ease;
+  }
+  
+  #search:focus {
+    border-color: #87CEFA;
+    outline: none;
+  }
+  
+  #submit {
+    border-radius: 0 5px 5px 0;
+    border: 2px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    width: 5em;
+    cursor: pointer;
+    background-color: #87CEFA;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #submit:hover {
+    background-color: #1E90FF;
+    transform: scale(1.05);
+  }
+  
+  #weather-data {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 1.5em;
+    margin-top: 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease;
+  }
+  
+  #weather-data img {
+    border-radius: 50%;
+    background-color: #87CEFA;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  #weather-data div {
+    text-align: left;
+  }
+  
+  #weather-data h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+  }
+  
+  #weather-data p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
